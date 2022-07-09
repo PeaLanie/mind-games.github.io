@@ -1,0 +1,206 @@
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+p {
+    line-height: 1.5em;
+    margin: 15px;
+}
+a:hover {
+    color: green;
+}
+a {
+    color: rgb(0, 0, 0);
+}
+h1, h2 {
+    text-align: center;
+}
+hr {
+    border: 1px solid #8f8f8f;
+    margin: 5px;
+}
+h4 {
+    text-decoration: underline;
+}
+
+/* ------------------ HEADER ------------------- */
+header {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    height: 80px;
+    background-color: rgba(255, 255, 255);
+    box-shadow: 2px 2px 2px #8f8f8f;
+    z-index: 7;
+    font-weight: bold;
+    border-bottom-right-radius: 20px;
+}
+.headerList {
+    display: flex;
+    margin: 0px 30px;
+    text-align: center;
+}
+.active {
+    border-bottom: 3px solid green;
+}
+ul {
+    margin: 0px auto;
+    display: flex;
+}
+header a:hover {
+    color: green;
+    text-shadow: 2px 2px 4px green;
+    font-size: 1.1pc;
+}
+header img {
+    position: absolute;
+    top: 5px;
+    margin: 5px;
+}
+header a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* --------------------------- WRAPPER ---------------------------- */
+#wrapper {
+    display: flex;
+    font-size: 1.1pc;
+}
+
+/* ---------------------------- MENU ------------------------------ */
+#menu {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    border: 0.5px solid #8f8f8f;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #ffffff;
+}
+#menu ul {
+    display: flex;
+    flex-direction: row;
+
+    font-size: 1pc;
+}
+li.menu-list-items {
+    padding: 5px;
+    list-style: none;
+    margin: 0 25px;
+}
+#menu li.active {
+    border-bottom: 2px solid green;
+}
+.menu-list-items:hover {
+    background-color: green;
+}
+.menu-anchor {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu-anchor:hover {
+    color: #ffffff;
+}
+
+/* ---------------------- WRAPPER - LESSONS ----------------------- */
+
+.lessons {
+    width: 850px;
+    margin: 10px auto;
+}
+#currentDate {
+    text-align: center;
+    color: #8f8f8f;
+}
+.stepsAndIllustrations {
+    display: flex;
+}
+.steps {
+    border-left: 2px solid #8f8f8f;
+}
+.illustrationImgs {
+    margin: 5px;
+}
+
+/* ------------------- THE GAME ------------------------ */
+.theGame {
+    /* display: none; */
+    border: 1px solid green;
+    border-radius: 10px 10px;
+    background-color: #d3d3d3;
+    width: 850px;
+    margin: 5px auto;
+    box-shadow: 3px 3px 8px;
+}
+.theList {
+    margin: 20px;
+    text-align: center;
+}
+.individualNum {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0px 15px;
+}
+.controls {
+    text-align: center;
+}
+.gameButtons:hover {
+    background-color: green;
+    color: #ffffff;
+}
+#outPut {
+    padding: 5px;
+}
+.plus {
+    font-size: 48px;
+}
+#countdown, .greenNum {
+    color: green;
+    font-weight: bold;
+}
+.oops {
+    color: red;
+    font-weight: bold;
+}
+#usersAnswer {
+    padding: 5px;
+    border: 2px solid #4b4b4b;
+}
+#submit {
+    font-size: large;
+    font-weight: bold;
+    width: 100px;
+    padding: 10px;
+    border: 2px solid green;
+}
+#reload {
+    width: 100px;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+}
+
+/* ------------------------- FOOTER -------------------------- */
+
+footer {
+    color: white;
+    
+    bottom: 0px;
+    border: 1px solid rgb(255, 255, 255);
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0px 15px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(0, 128, 0, 0.9);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Level</title>
+    <script src="js/advanced.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo">
+        <ul>
+            <li id="homeLink" class="headerList"><a href="index.html">Home</a></li>
+            <li class="headerList"><a href="basic-addition.html">Basic</a></li>
+            <li class="headerList"><a href="#">Beginner</a></li>
+            <li class="headerList"><a href="intermediate.html">Intermediate</a></li>
+            <li class="headerList"><a href="advanced.html">Advanced</a></li>
+            <li class="headerList"><a href="master.html">Master</a></li>
+            <li class="headerList"><a href="expert.html">Expert</a></li>
+            <li class="headerList"><a href="#">Next Level</a></li>
+        </ul>
+    </header>
+    <div id="wrapper">
+        <div class="lessons">
+            <h1>Next Level</h1>
+            <p id="currentDate"></p>
+                <p>
+
+                </p>
+            <h2>The Theory:</h2>
+                <p>
+                    (Think you already now how to add natural numbers? <a href="#theGameSection">Jump straight to the game</a>)<br><br>
+                </p>
+            <h4><strong>How to add up a list of real numbers; from 10-90?</strong><br><br>Example #1</h4>
+                <p>
+
+                </p>
+            <div class="stepsAndIllustrations">
+                <ol class="steps">
+
+                </ol>
+                <div>
+                    <img src="images" id="img" class="illustrationImgs" alt="list of random numbers">
+                    <img src="images" id="img" class="illustrationImgs" alt="solution to the list above">
+                </div>
+            </div>
+            <br>
+            <hr>
+            <p>
+
+            </p>
+        </div>
+        <section id="theGameSection" class="theGame">
+            <div class="theList">
+                <span class="individualNum" id="beginnerModeViewPort1"></span>
+                <span class="plus">+</span>
+                <span class="individualNum" id="beginnerModeViewPort2"></span>
+                <span class="plus">+</span>
+                <span class="individualNum" id="beginnerModeViewPort3"></span>
+                <span class="plus">+</span>
+                <span class="individualNum" id="beginnerModeViewPort4"></span>
+                <span class="plus">+</span>
+                <span class="individualNum" id="beginnerModeViewPort5"></span>
+            </div>
+            <div class="controls">
+                <label for="">Enter Answer:</label><br>
+                <input type="text" id="usersAnswer" name="users_answer" placeholder="Your Answer..."><br><br>
+                <button type="button" id="submit" class="gameButtons" onclick="checkAnswer()">Submit</button>
+                <button type="button" id="reload" class="gameButtons" onclick="window.location.reload()">Reload</button>
+                <p id="outPut">Stuck!? Just click "Submit" to check the correct answer. After that click "Reload" to get a new list and try again.</p>
+            </div>
+        </section>
+        <br><br>
+    </div>
+    <footer>PeaLanie &copy; 2022 Copyright</footer>
+    <script src="js/advanced.js"></script>
+</html>

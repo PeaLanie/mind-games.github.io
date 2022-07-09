@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate Mode</title>
+    <script src="js/intermadiate.js"></script>
+    <link rel="stylesheet" href="../../css/game-styles.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../../images/logo.png" alt="Logo"></a>
+        <ul>
+            <li class="headerList"><a href="basic-addition.html">Basic</a></li>
+            <li class="headerList"><a href="beginner-mode.html">Beginner</a></li>
+            <li class="headerList active"><a href="#">Intermediate</a></li>
+            <li class="headerList"><a href="advanced.html">Advanced</a></li>
+            <li class="headerList"><a href="master.html">Master</a></li>
+            <li class="headerList"><a href="expert.html">Expert</a></li>
+            <li class="headerList"><a href="#">Next Level</a></li>
+        </ul>
+    </header>
+    <div id="wrapper">
+        <section id="menu">
+            <ul>
+                <li id="home-list-item" class="menu-list-items"><a href="../../index.html" class="menu-anchor">HOME</a></li>
+                <li class="menu-list-items active"><a href="#" class="menu-anchor">Addition</a></li>
+                <li class="menu-list-items"><a href="games/subtraction/basic-subtraction.html" class="menu-anchor">Subtraction</a></li>
+                <li class="menu-list-items"><a href="games/multiplication/basic-multiplication.html" class="menu-anchor">Multiplication</a></li>
+                <li class="menu-list-items"><a href="games/division/basic-division.html" class="menu-anchor">Division</a></li>
+            </ul>
+        </section>
+        <div class="lessons">
+            <h1>Intermediate</h1>
+            <p id="currentDate"></p>
+                <p>
+                    Now you understand adding numbers with 2 digits which all end with zeros. Now what if the digits actually end with a real number instead of a zero? It's actually easy but you have to store some numbers in your short term memory which you will then recall later.
+                </p>
+            <h2>The Theory:</h2>
+                <p>
+                    (Think you already now how to add natural numbers? <a href="#theGameSection">Jump straight to the game</a>)
+                </p>
+                <p>
+                    Now we are going to look at numbers that end with a 5 and a 0. In this mode you will sometimes come across a 5 standing alone.
+                </p>
+                <p>
+                    So, the theory here is to first add the second digits in order to simplify the list. When you add the second digits, you will have to store the sum in your short term memory and the space they occupied will be replaced with 0.
+                </p>
+                <p>
+                    Once you finish this step, you will find that the list start to look familiar...it becomes a <a href="beginner-mode.html">Beginner Mode</a> kind of list, if you're familiar with this list; then you know how to move on from here. If not, I strongly recommend you start from the <a href="basic-addition.html">Basics</a><br>
+                    Enough with the theory; lets be practical. Check out some examples below.
+                </p>
+            <h4><strong>How to add up a list of real numbers between 5 and 95 with increments of 5?</strong><br><br>Example #1</h4>
+                <p>
+                    Below is a list of numbers that either end with a 0 or a 5. Look at the adjacent steps to understand how to add these numbers.
+                </p>
+            <div class="stepsAndIllustrations">
+                <ol class="steps">
+                    <li>
+                        First of all, add up the 5's and store the answer in your short term memory. Now the list should look like a <a href="beginner-mode.html">Beginner Mode</a> kind of list.
+                    </li><br>
+                    <li>
+                        From there, temporarly drop the zeros. Now the list becomes a <a href="basic-addition.html">Basic Mode</a> kind of list.
+                    </li><br>
+                    <li>
+                        Add that list and undrop the zero back to the sum. Now add the number that you stored in your memory, in this case it is 15.
+                    </li><br>
+                    <li>
+                        The final answer should be 215
+                    </li>
+                </ol>
+                <div>
+                    <img src="../../images/image13.png" id="img" class="illustrationImgs" alt="list of random numbers">
+                    <img src="../../images/image14.png" id="img" class="illustrationImgs" alt="solution to the list above">
+                </div>
+            </div>
+            <p>
+                <strong>Note:</strong> If you are not familiar with step 2, I recommend you go back to the <a href="basic-addition.html">Basics</a>
+            </p>
+            <br>
+            <hr>
+            <h4>Example#2</h4>
+                <p>
+
+                </p>
+            <div class="stepsAndIllustrations">
+                <ol class="steps">
+
+                </ol>
+                <div>
+                    <img src="../../images/image15.png" id="img" class="illustrationImgs" alt="list of random numbers">
+                    <img src="../../images/image16.png" id="img" class="illustrationImgs" alt="solution to the list above">
+                </div>
+            </div>
+            <br>
+            <hr>
+            <h4>Example#3</h4>
+                <p>
+
+                </p>
+            <div class="stepsAndIllustrations">
+                <ol class="steps">
+
+                </ol>
+                <div>
+                    <img src="../../images/image17.png" id="img" class="illustrationImgs" alt="list of random numbers">
+                    <img src="../../images/image18.png" id="img" class="illustrationImgs" alt="solution to the list above">
+                </div>
+            </div>
+            <br>
+            <hr>
+            <p>
+
+            </p>
+            <section id="theGameSection" class="theGame">
+                <div class="theList">
+                    <span class="individualNum" id="intermediateViewPort1"></span>
+                    <span class="plus">+</span>
+                    <span class="individualNum" id="intermediateViewPort2"></span>
+                    <span class="plus">+</span>
+                    <span class="individualNum" id="intermediateViewPort3"></span>
+                    <span class="plus">+</span>
+                    <span class="individualNum" id="intermediateViewPort4"></span>
+                    <span class="plus">+</span>
+                    <span class="individualNum" id="intermediateViewPort5"></span>
+                    <p id="countdown"></p>
+                </div>
+                <div class="controls">
+                    <label for="">Enter Answer:</label><br>
+                    <input type="text" id="usersAnswer" name="users_answer" placeholder="Your Answer..."><br><br>
+                    <button type="button" id="submit" class="gameButtons" onclick="checkAnswer()">Submit</button>
+                    <button type="button" id="reload" class="gameButtons" onclick="window.location.reload()">Reload</button>
+                    <p id="outPut">Stuck!? Just click "Submit" to check the correct answer. After that click "Reload" to get a new list and try again.</p>
+                </div>
+            </section>
+            <br><br>
+        </div>
+    </div>
+    <footer>Mechine Brain &copy; 2022 Copyright</footer>
+    <script src="intermediate.js"></script>
+</html>
